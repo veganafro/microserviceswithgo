@@ -1,0 +1,8 @@
+load("@rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "repository",
+    srcs = ["error.go"],
+    importpath = "movieexample.com/metadata/internal/repository",
+    visibility = ["//metadata:__subpackages__"],
+)
