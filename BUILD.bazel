@@ -1,4 +1,4 @@
-# gazelle:prefix github.com/veganafro/microserviceswithgo
+# gazelle:prefix movieexample.com
 
 load("@gazelle//:def.bzl", "gazelle", "gazelle_binary")
 
