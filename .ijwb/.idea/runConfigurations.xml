@@ -7,6 +7,11 @@
         <option value="com.goide.execution.testing.frameworks.gobench.GobenchRunConfigurationProducer" />
         <option value="com.goide.execution.testing.frameworks.gocheck.GocheckRunConfigurationProducer" />
         <option value="com.goide.execution.testing.frameworks.gotest.GotestRunConfigurationProducer" />
+        <option value="com.intellij.javascript.jest.JestRunConfigurationProducer" />
+        <option value="com.intellij.javascript.protractor.ProtractorRunConfigurationProducer" />
+        <option value="com.intellij.lang.javascript.buildTools.grunt.rc.GruntRunConfigurationProducer" />
+        <option value="com.intellij.lang.javascript.buildTools.gulp.rc.GulpRunConfigurationProducer" />
+        <option value="com.intellij.lang.javascript.buildTools.npm.rc.NpmRunConfigurationProducer" />
       </set>
     </option>
   </component>
