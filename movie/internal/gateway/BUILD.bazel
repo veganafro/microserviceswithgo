@@ -1,0 +1,8 @@
+load("@rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "gateway",
+    srcs = ["error.go"],
+    importpath = "movieexample.com/movie/internal/gateway",
+    visibility = ["//movie:__subpackages__"],
+)
