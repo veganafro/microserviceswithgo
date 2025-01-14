@@ -25,6 +25,7 @@ func New(repo ratingRepository) *Controller {
 	return &Controller{repo}
 }
 
+// GetAggregatedRating returns the aggregated rating for a record or ErrNotFound if there are no ratings for it.
 func (c *Controller) GetAggregatedRating(
 	ctx context.Context,
 	recordID model.RecordID,
@@ -43,6 +44,7 @@ func (c *Controller) GetAggregatedRating(
 	return sum / float64(len(ratings)), nil
 }
 
+// PutRating writes a rating for a given record.
 func (c *Controller) PutRating(
 	ctx context.Context,
 	recordID model.RecordID,
