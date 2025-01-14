@@ -1,0 +1,9 @@
+load("@rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "model",
+    srcs = ["model.go"],
+    importpath = "movieexample.com/movie/pkg/model",
+    visibility = ["//visibility:public"],
+    deps = ["//metadata/pkg/model:metadata_model"],
+)
