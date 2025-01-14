@@ -1,0 +1,14 @@
+load("@rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "movie",
+    srcs = ["controller.go"],
+    importpath = "movieexample.com/movie/internal/controller/movie",
+    visibility = ["//movie:__subpackages__"],
+    deps = [
+        "//metadata/pkg/model:metadata_model",
+        "//movie/internal/gateway",
+        "//movie/pkg/model",
+        "//rating/pkg/model",
+    ],
+)

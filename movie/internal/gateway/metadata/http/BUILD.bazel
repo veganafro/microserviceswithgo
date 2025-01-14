@@ -1,0 +1,12 @@
+load("@rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "http",
+    srcs = ["metadata.go"],
+    importpath = "movieexample.com/movie/internal/gateway/metadata/http",
+    visibility = ["//movie:__subpackages__"],
+    deps = [
+        "//metadata/pkg/model:metadata_model",
+        "//movie/internal/gateway",
+    ],
+)

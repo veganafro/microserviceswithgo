@@ -1,0 +1,12 @@
+load("@rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "rating",
+    srcs = ["controller.go"],
+    importpath = "movieexample.com/rating/internal/controller/rating",
+    visibility = ["//rating:__subpackages__"],
+    deps = [
+        "//rating/internal/repository",
+        "//rating/pkg/model",
+    ],
+)

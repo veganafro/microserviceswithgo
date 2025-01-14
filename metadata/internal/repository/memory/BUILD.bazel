@@ -1,0 +1,12 @@
+load("@rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "memory",
+    srcs = ["memory.go"],
+    importpath = "movieexample.com/metadata/internal/repository/memory",
+    visibility = ["//metadata:__subpackages__"],
+    deps = [
+        "//metadata/internal/repository",
+        "//metadata/pkg/model:metadata_model",
+    ],
+)

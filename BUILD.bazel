@@ -1,0 +1,16 @@
+# gazelle:prefix movieexample.com
+
+load("@gazelle//:def.bzl", "gazelle", "gazelle_binary")
+
+gazelle(
+    name = "gazelle",
+    gazelle = ":gazelle_bin",
+)
+
+gazelle_binary(
+    name = "gazelle_bin",
+    languages = [
+        "@gazelle//language/go",  # Built-in rule from gazelle for Golang.
+    ],
+    visibility = ["//visibility:public"],
+)
