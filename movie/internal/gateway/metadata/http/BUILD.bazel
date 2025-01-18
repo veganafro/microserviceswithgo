@@ -8,5 +8,6 @@ go_library(
     deps = [
         "//metadata/pkg/model:metadata_model",
         "//movie/internal/gateway",
+        "//pkg/discovery",
     ],
 )
