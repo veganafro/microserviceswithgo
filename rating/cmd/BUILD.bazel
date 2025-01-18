@@ -6,6 +6,8 @@ go_library(
     importpath = "movieexample.com/rating/cmd",
     visibility = ["//visibility:private"],
     deps = [
+        "//pkg/discovery",
+        "//pkg/discovery/consul",
         "//rating/internal/controller/rating",
         "//rating/internal/handler/http",
         "//rating/internal/repository/memory",
