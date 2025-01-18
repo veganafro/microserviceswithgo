@@ -7,6 +7,7 @@ go_library(
     visibility = ["//movie:__subpackages__"],
     deps = [
         "//movie/internal/gateway",
+        "//pkg/discovery",
         "//rating/pkg/model",
     ],
 )
