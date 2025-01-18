@@ -10,6 +10,8 @@ go_library(
         "//movie/internal/gateway/metadata/http",
         "//movie/internal/gateway/rating/http",
         "//movie/internal/handler/http",
+        "//pkg/discovery",
+        "//pkg/discovery/consul",
     ],
 )
 
