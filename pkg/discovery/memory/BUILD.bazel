@@ -1,0 +1,9 @@
+load("@rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "memory",
+    srcs = ["memory.go"],
+    importpath = "movieexample.com/pkg/discovery/memory",
+    visibility = ["//visibility:public"],
+    deps = ["//pkg/discovery"],
+)

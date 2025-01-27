@@ -1,0 +1,12 @@
+load("@rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "consul",
+    srcs = ["consul.go"],
+    importpath = "movieexample.com/pkg/discovery/consul",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//pkg/discovery",
+        "@com_github_hashicorp_consul_api//:api",
+    ],
+)
