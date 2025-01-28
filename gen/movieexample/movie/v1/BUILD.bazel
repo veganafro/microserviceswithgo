@@ -1,0 +1,13 @@
+load("@rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "movie",
+    srcs = ["movie.pb.go"],
+    importpath = "movieexample.com/gen/movieexample/movie/v1",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//gen/movieexample/metadata/v1:metadata",
+        "@org_golang_google_protobuf//reflect/protoreflect",
+        "@org_golang_google_protobuf//runtime/protoimpl",
+    ],
+)
