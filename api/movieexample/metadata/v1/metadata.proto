@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package movieexample.metadata.v1;
+
+option go_package = "movieexample.com/gen/movieexample/metadata/v1";
+
+message Metadata {
+  optional string id = 1;
+  optional string title = 2;
+  optional string description = 3;
+  optional string director = 4;
+}
