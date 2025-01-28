@@ -1,6 +1,6 @@
 {
   "lockFileVersion": 6,
-  "moduleFileHash": "fabc1eadf0d399d301d95e670249fe909db8085ccfed7eb74a3a3e1b4973a8c7",
+  "moduleFileHash": "d5f5df6bbc79c276cb07b889b0f745514f1040af6de4324b0d1052a231167b3e",
   "flags": {
     "cmdRegistries": [
       "https://bcr.bazel.build/"
@@ -62,7 +62,8 @@
             "column": 24
           },
           "imports": {
-            "com_github_hashicorp_consul_api": "com_github_hashicorp_consul_api"
+            "com_github_hashicorp_consul_api": "com_github_hashicorp_consul_api",
+            "org_golang_google_protobuf": "org_golang_google_protobuf"
           },
           "devImports": [],
           "tags": [
