@@ -1,0 +1,19 @@
+load("@rules_go//go:def.bzl", "go_binary", "go_library")
+
+go_library(
+    name = "sizecompare_lib",
+    srcs = ["main.go"],
+    importpath = "movieexample.com/cmd/sizecompare",
+    visibility = ["//visibility:private"],
+    deps = [
+        "//gen/movieexample/metadata/v1:metadata",
+        "//metadata/pkg/model:metadata_model",
+        "@org_golang_google_protobuf//proto",
+    ],
+)
+
+go_binary(
+    name = "sizecompare",
+    embed = [":sizecompare_lib"],
+    visibility = ["//visibility:public"],
+)
