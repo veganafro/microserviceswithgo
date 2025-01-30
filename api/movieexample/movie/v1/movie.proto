@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package movieexample.movie.v1;
+
+import "movieexample/metadata/v1/metadata.proto";
+
+option go_package = "movieexample.com/gen/movieexample/movie/v1";
+
+message Movie {
+  optional float rating = 1;
+  optional movieexample.metadata.v1.Metadata metadata = 2;
+}
